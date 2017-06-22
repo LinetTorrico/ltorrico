@@ -15,8 +15,8 @@ import java.util.List;
  * Created by Linet on 22/6/2017.
  */
 @RestController
-@RequestMapping("/registries")
-@Api(value = "registries", description = "Operations related to transactions")
+@RequestMapping("/register")
+
 public class RegistryCarSoldController {
 
     @Autowired

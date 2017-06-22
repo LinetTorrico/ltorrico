@@ -11,22 +11,30 @@ import java.util.List;
 /**
  * Created by Linet on 22/6/2017.
  */
+
+
 @RestController
 @RequestMapping("/buyers")
-@Api(value = "buyers", description = "Operations related to buyers")
+
 public class BuyerController {
 
     @Autowired
     private BuyerService buyerService;
+
+    @RequestMapping(method = RequestMethod.POST)
+    public Buyer addBuyer(@RequestBody BuyerRequestDTO buyerDTO) {
+        return buyerService.addNewBuyer(buyerDTO);
+    }
+
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Buyer> getBuyers() {
         return buyerService.getBuyers();
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public Buyer addBuyer(@RequestBody BuyerRequestDTO buyerDTO) {
-        return buyerService.addNewBuyer(buyerDTO);
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    public Buyer updateBuyer(@PathVariable String id, @RequestBody BuyerRequestDTO buyerDTO) {
+        return buyerService.updateBuyer(id, buyerDTO);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
@@ -34,17 +42,12 @@ public class BuyerController {
         return buyerService.deleteBuyer(id);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public Buyer updateBuyer(@PathVariable String id, @RequestBody BuyerRequestDTO buyerDTO) {
-       return buyerService.updateBuyer(id, buyerDTO);
-    }
-
 
     public static class BuyerRequestDTO {
         private String name;
         private String ci;
         private String profession;
-        private long cellphone;
+        private long cell;
 
         public String getName() {
             return name;
@@ -71,11 +74,11 @@ public class BuyerController {
         }
 
         public long getCellphone() {
-            return cellphone;
+            return cell;
         }
 
         public void setCellphone(long cellphone) {
-            this.cellphone = cellphone;
+            this.cell = cellphone;
         }
     }
 }

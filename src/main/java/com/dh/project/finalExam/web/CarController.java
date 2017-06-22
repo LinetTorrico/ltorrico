@@ -13,7 +13,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/cars")
-@Api(value = "cars", description = "Operations related to cars")
+
 public class CarController {
 
     @Autowired

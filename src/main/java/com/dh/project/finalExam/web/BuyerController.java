@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by Alan on 17/6/2017.
+ * Created by Linet on 22/6/2017.
  */
 @RestController
 @RequestMapping("/buyers")

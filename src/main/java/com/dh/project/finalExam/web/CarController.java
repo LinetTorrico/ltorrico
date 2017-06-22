@@ -1,7 +1,7 @@
 package com.dh.project.finalExam.web;
 
 import com.dh.project.finalExam.domain.Car;
-import com.dh.project.finalExam.sservice.CarService;
+import com.dh.project.finalExam.service.CarService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by Alan on 17/6/2017.
+ * Created by Linet on 22/6/2017.
  */
 @RestController
 @RequestMapping("/cars")

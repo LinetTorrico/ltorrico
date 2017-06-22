@@ -11,6 +11,7 @@ public class Buyer {
     @Id
     private String id;
 
+
     private String name;
     private String ci;
     private String profession;

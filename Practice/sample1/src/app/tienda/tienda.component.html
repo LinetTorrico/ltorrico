@@ -1,0 +1,23 @@
+<h1>
+  Soy el padre tienda:  {{title}}
+</h1>
+<ul>
+  <li>Camiseta rosa</li>
+  <li>Gorra negra</li>
+</ul>
+
+Soy el hijo:
+<p>
+Nombre del parque :
+<!--[(Para cambiar los datos de manera bidireccional)]-->
+
+<input type="'text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()"/>
+</p>
+<p>
+Resultado: {{nombreDelParque}}
+</p>
+  <br>
+Hijo:::
+<app-parques [nombre]="nombreDelParque"></app-parques>
+
+

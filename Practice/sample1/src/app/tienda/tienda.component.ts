@@ -8,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class TiendaComponent implements OnInit {
   public titulo;
   public nombreDelParque: string;
+  public  metrosDelParque: number;
+  public miParque;
+
   constructor() {
     this.titulo='es la tienda';
    }
 
-   mostrarNombre(){
-      console.log(this.nombreDelParque);
+   mostrar(){
+      //console.log(this.metrosDelParque);
+   }
+   verDatosParque(event){
+    //console.log(event);
+    //this.miParque = event;
    }
   ngOnInit() {
   }

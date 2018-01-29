@@ -1,7 +1,9 @@
 <h1>
   Soy el padre tienda:  {{title}}
 </h1>
-<ul>
+
+
+<!--<ul>
   <li>Camiseta rosa</li>
   <li>Gorra negra</li>
 </ul>
@@ -10,14 +12,33 @@ Soy el hijo:
 <p>
 Nombre del parque :
 <!--[(Para cambiar los datos de manera bidireccional)]-->
-
+<!---
 <input type="'text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()"/>
 </p>
 <p>
 Resultado: {{nombreDelParque}}
 </p>
   <br>
+
+<p>
+  Metros del parque :
+  <!--[(Para cambiar los datos de manera bidireccional)]-->
+
+  <!--<input type="'text" [(ngModel)]="metrosDelParque" (keyup)="mostrar()"/>
+</p>
+
+
+  <ol>sss
+      <li>{{miParque.nombre}}</li>
+    <li>{{miParque.metros}}</li>
+    <li>{{miParque.vegetacion}}</li>
+    <li>{{miParque.abierto}}</li>
+  </ol>
+
+
 Hijo:::
-<app-parques [nombre]="nombreDelParque"></app-parques>
+<app-parques [nombre]="'Nombre por defecto'"
+              (pasameLosDatos)="verDatosParque($event)">
 
-
+</app-parques>
+-->

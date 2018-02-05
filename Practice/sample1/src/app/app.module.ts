@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms'
 
+import { AppRoutingModule } from './app.routing'
+
+
 // componentes
 
 import { TiendaComponent } from './tienda/tienda.component';
@@ -13,6 +16,7 @@ import { AnimalsComponent } from './animals/animals.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { KeepersComponent } from './keepers/keepers.component';
+//import { routing } from './app.routing.ts';
 
 
 @NgModule({
@@ -29,7 +33,9 @@ import { KeepersComponent } from './keepers/keepers.component';
   imports: [ //
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

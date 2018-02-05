@@ -1,5 +1,23 @@
 
 
-<app-tienda></app-tienda>
-<hr/>
+<div class="navigation col-lg-12">
+  <nav class="navbar navbar-default">
+    <div class = "container-fluid">
+        <div class="navbar-header">
+          <a [routerLink]="['/home']" class="navbar-brand">{{title}}</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+            <li><a [routerLink]="['/animals']"><span class="glyphicon glyphicon-star"></span> Animales</a></li>
+            <li><a [routerLink]="['/cuidador']"><span class="glyphicon glyphicon-user"></span> Cuidadores</a></li>
+            <li><a [routerLink]="['/tienda']"><span class="glyphicon glyphicon-gift"></span> Tienda</a></li>
+            <li><a [routerLink]="['/contact']"><span class="glyphicon glyphicon-comment"></span> Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+</div>
 
+<span *ngIf="emailContacto">Email contacto: {{emailContacto}}</span>
+<div class="col-lg-11">
+<router-outlet></router-outlet>
+</div>

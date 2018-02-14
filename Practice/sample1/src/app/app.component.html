@@ -7,11 +7,11 @@
           <a [routerLink]="['/home']" class="navbar-brand">{{title}}</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-            <li><a [routerLink]="['/animals']"><span class="glyphicon glyphicon-star"></span> Animales</a></li>
-            <li><a [routerLink]="['/cuidador']"><span class="glyphicon glyphicon-user"></span> Cuidadores</a></li>
-            <li><a [routerLink]="['/tienda']"><span class="glyphicon glyphicon-gift"></span> Tienda</a></li>
-            <li><a [routerLink]="['/contact']"><span class="glyphicon glyphicon-comment"></span> Contacto</a></li>
+            <li><a [routerLink]="['/home']" [routerLinkActive]="['active']"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+          <li><a [routerLink]="['/animals']" [routerLinkActive]="['active']"><span class="glyphicon glyphicon-star"></span> Animales</a></li>
+          <li><a [routerLink]="['/cuidador']" [routerLinkActive]="['active']"><span class="glyphicon glyphicon-user"></span> Cuidadores</a></li>
+          <li><a [routerLink]="['/tienda']" [routerLinkActive]="['active']"><span class="glyphicon glyphicon-gift"></span> Tienda</a></li>
+          <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']"><span class="glyphicon glyphicon-comment"></span> Contacto</a></li>
         </ul>
       </div>
     </nav>

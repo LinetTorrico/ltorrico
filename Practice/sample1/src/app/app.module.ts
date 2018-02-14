@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app.routing'
-
+//import modulos
+import { EmailModule } from './email/email.module'
 
 // componentes
 
@@ -16,6 +17,8 @@ import { AnimalsComponent } from './animals/animals.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { KeepersComponent } from './keepers/keepers.component';
+import { GuardarEmailComponent } from './modules/components/guardar-email/guardar-email.component';
+import { MostrarEmailComponent } from './modules/components/mostrar-email/mostrar-email.component';
 //import { routing } from './app.routing.ts';
 
 
@@ -28,14 +31,16 @@ import { KeepersComponent } from './keepers/keepers.component';
     AnimalsComponent,
     ContactComponent,
     HomeComponent,
-    KeepersComponent
+    KeepersComponent,
+    GuardarEmailComponent,
+    MostrarEmailComponent
   ],
   imports: [ //
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-
+    EmailModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

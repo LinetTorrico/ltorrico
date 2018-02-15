@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { KeepersComponent } from './keepers/keepers.component';
 import { GuardarEmailComponent } from './modules/components/guardar-email/guardar-email.component';
 import { MostrarEmailComponent } from './modules/components/mostrar-email/mostrar-email.component';
+import { MainEmailComponent } from './modules/components/main-email/main-email.component';
 //import { routing } from './app.routing.ts';
 
 
@@ -33,7 +34,8 @@ import { MostrarEmailComponent } from './modules/components/mostrar-email/mostra
     HomeComponent,
     KeepersComponent,
     GuardarEmailComponent,
-    MostrarEmailComponent
+    MostrarEmailComponent,
+    MainEmailComponent
   ],
   imports: [ //
     BrowserModule,
